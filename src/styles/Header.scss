@@ -1,0 +1,31 @@
+.header {
+  &__logo {
+    color: $white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 41px;
+  }
+
+  &__button {
+    font-weight: 400;
+    font-size: 23px;
+    padding: 7px 22px;
+    line-height: 46px;
+    text-align: center;
+    background: #c78365;
+    color: $white;
+    border: none;
+    border-radius: 0px;
+
+    &:hover {
+      background: #a26a52;
+    }
+  }
+
+  &__navItems {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 46px;
+    color: $white;
+  }
+}
