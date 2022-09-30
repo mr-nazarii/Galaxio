@@ -32,6 +32,10 @@
   &__secondaryText {
     @include secondaryText;
   }
+
+  &__button {
+    @include button;
+  }
 }
 
 .white {
