@@ -1,0 +1,39 @@
+.about {
+  &__sectionTitle {
+    color: $white;
+    @include sectionTitle;
+
+    p {
+      position: relative;
+
+      &:before {
+        content: " ";
+        background: white;
+        width: 197px;
+        height: 7px;
+        position: absolute;
+        bottom: -24px;
+        left: 50%;
+        transform: translate(-70%, 0);
+      }
+      &:after {
+        content: " ";
+        background: linear-gradient(90deg, #c78365 0%, #ffecbc 104.31%);
+        width: 197px;
+        height: 7px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-30%, 0);
+        bottom: -40px;
+      }
+    }
+  }
+
+  &__secondaryText {
+    @include secondaryText;
+  }
+}
+
+.white {
+  color: $white;
+}

@@ -1,0 +1,16 @@
+.aboutUs {
+  &__title2 {
+    color: $white;
+    @include title2;
+
+    span {
+      background: linear-gradient(90deg, #e3cf9c 1.9%, #c78365 100%);
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  &__secondaryText {
+    @include secondaryText;
+  }
+}

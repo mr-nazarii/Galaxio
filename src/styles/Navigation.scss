@@ -1,0 +1,19 @@
+.navigation {
+  &__logo {
+    color: $white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 41px;
+  }
+
+  &__button {
+    @include button;
+  }
+
+  &__navItems {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 46px;
+    color: $white;
+  }
+}

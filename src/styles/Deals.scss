@@ -1,0 +1,46 @@
+.deals {
+  &__sectionTitle {
+    color: $white;
+    @include sectionTitle;
+    line-height: 40px;
+
+    p {
+      position: relative;
+
+      &:before {
+        content: " ";
+        background: white;
+        width: 197px;
+        height: 7px;
+        position: absolute;
+        bottom: -24px;
+        left: 50%;
+        transform: translate(-70%, 0);
+      }
+      &:after {
+        content: " ";
+        background: linear-gradient(90deg, #c78365 0%, #ffecbc 104.31%);
+        width: 197px;
+        height: 7px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-30%, 0);
+        bottom: -40px;
+      }
+    }
+  }
+
+  &__secondaryText {
+    @include secondaryText;
+  }
+
+  &__button {
+    @include button;
+  }
+
+  &__wrapper {
+    background-color: #1c1c1c;
+    box-shadow: -7px 6px 2px rgba(255, 236, 188, 0.42);
+    border-radius: 29px;
+  }
+}
