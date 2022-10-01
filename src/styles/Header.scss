@@ -3,6 +3,10 @@
 
   &__title1 {
     @include sectionTitle;
+
+    @media (max-width: 400px) {
+      font-size: 26px;
+    }
   }
 
   &__title2 {
@@ -16,6 +20,10 @@
     background: linear-gradient(90deg, #e3cf9c 1.9%, #c78365 100%);
     background-clip: text;
     color: transparent;
+
+    @media (max-width: 400px) {
+      font-size: 88px;
+    }
   }
 
   &__secondaryText {

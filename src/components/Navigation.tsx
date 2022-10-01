@@ -1,27 +1,33 @@
 import React from "react";
-import { Button, Nav } from "react-bootstrap";
-import Col from "react-bootstrap/esm/Col";
-import Row from "react-bootstrap/esm/Row";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 
 export const Navigation = () => {
   return (
     <>
-      <Row className="p-4 mb-5 d-flex flex-column flex-lg-row align-items-center">
-        <Col md="auto">
-          <h1 className="navigation__logo">GALAXIO TRAVEL</h1>
-        </Col>
-        <Col className="d-flex justify-content-center">
-          <Nav className="navigation__navItems flex-grow-1 justify-content-around ">
-            <Nav.Item>Home</Nav.Item>
-            <Nav.Item>About</Nav.Item>
-            <Nav.Item>Testemonials</Nav.Item>
-            <Nav.Item>Blogs</Nav.Item>
-          </Nav>
-        </Col>
-        <Col md="2" className="d-flex justify-content-end">
-          <Button className="navigation__button">Book Now</Button>
-        </Col>
-      </Row>
+      <Navbar className="mb-5" collapseOnSelect expand="lg" variant="dark">
+        <Container>
+          <Navbar.Brand className="navigation__logo fs-1" href="#home">
+            GALAXIO TRAVEL
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            style={{ border: "none" }}
+          />
+          <Navbar.Collapse
+            className="d-lg-flex justify-content-between"
+            id="responsive-navbar-nav"
+          >
+            <Nav className="me-3 text-center flex-grow-1 justify-content-around">
+              <Nav.Link href="#about">About</Nav.Link>
+              <Nav.Link href="#testemonials">Testemonials</Nav.Link>
+              <Nav.Link href="#blogs">Blogs</Nav.Link>
+            </Nav>
+            <Nav>
+              <Button className="fs-5 navigation__button">Book Now</Button>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </>
   );
 };

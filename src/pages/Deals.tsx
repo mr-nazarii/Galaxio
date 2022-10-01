@@ -11,8 +11,17 @@ export const Deals = () => {
         </Col>
       </Row>
       <Row className="d-flex gap-5">
-        <DealsElement />
-        <DealsElement />
+        <DealsElement
+          firstP="Vacations on Uranus"
+          secondP="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+          imgSrc="uranus"
+        />
+        <DealsElement
+          firstP="Visit Grandparents
+            on Saturn"
+          secondP="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+          imgSrc="saturn"
+        />
       </Row>
     </Container>
   );

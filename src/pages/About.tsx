@@ -14,10 +14,22 @@ export const About = () => {
           years away
         </p>
       </Row>
-      <Row className="mt-5 mb-5">
-        <AboutElement />
-        <AboutElement />
-        <AboutElement />
+      <Row className="mt-5 d-flex flex-column flex-md-row gap-5">
+        <AboutElement
+          imgSrc={"planet"}
+          firstP={"Swift and fast"}
+          secondP={"Deliver fast and comfortable journeys"}
+        />
+        <AboutElement
+          imgSrc={"rocket"}
+          firstP={"Your life is safe with us"}
+          secondP={"Your security and comfort are our number one priority"}
+        />
+        <AboutElement
+          imgSrc={"money"}
+          firstP={"Affordable great deals"}
+          secondP={"Great and convenient prices on trips you want"}
+        />
       </Row>
     </Container>
   );

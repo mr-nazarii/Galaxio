@@ -3,7 +3,7 @@ import { Button, Col, Container, Form, Image, Row } from "react-bootstrap";
 
 export const SignUp = () => {
   return (
-    <Container>
+    <Container id="blogs">
       <Row className="mb-5 d-flex flex-column gap-5 align-items-center">
         <Col className="text-center text-uppercase deals__sectionTitle">
           <p>SIGN UP FOR GREAT OFFERS</p>
@@ -11,8 +11,8 @@ export const SignUp = () => {
         <Col style={{ width: "336px", height: "49px", marginTop: "60px" }}>
           <Form.Control
             style={{ height: "49px", borderRadius: "0px" }}
-            placeholder="Recipient's username"
-            aria-label="Recipient's username"
+            placeholder="Email"
+            aria-label="Email"
             aria-describedby="basic-addon2"
           />
         </Col>
